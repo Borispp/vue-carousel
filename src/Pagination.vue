@@ -18,7 +18,9 @@
         v-bind:class="{ 'VueCarousel-dot--active': isCurrentDot(index) }"
         v-on:click="goToPage(index)"
         :style="dotStyle(index)"
-      ></button>
+      >
+				<span v-if="isCurrentDot(index) === 'true'">H</span>
+			</button>
     </div>
   </div>
 </template>
