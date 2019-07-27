@@ -19,7 +19,7 @@
         v-on:click="goToPage(index)"
         :style="dotStyle(index)"
       >
-				<span v-if="isCurrentDot(index) === 'true'">H</span>
+				hrgfyeur
 			</button>
     </div>
   </div>
