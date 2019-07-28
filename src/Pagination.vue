@@ -18,9 +18,7 @@
         v-bind:class="{ 'VueCarousel-dot--active': isCurrentDot(index) }"
         v-on:click="goToPage(index)"
         :style="dotStyle(index)"
-      >
-				hrgfyeur
-			</button>
+      ><svg v-if="isCurrentDot(index)" class="e-icon__circle-loading-progress" width="24" height="24" viewBox="1 1 30 30" xmlns="http://www.w3.org/2000/svg"><circle cx="16" cy="16" r="12" fill="none" stroke="#fff" stroke-opacity="0.2" stroke-width="2"/><circle class="e-icon__circle-loading-progress__value" cx="16" cy="16" r="12" fill="none" stroke="#fff" stroke-width="2"/></svg></button>
     </div>
   </div>
 </template>
